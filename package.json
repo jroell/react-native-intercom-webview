@@ -1,5 +1,5 @@
 {
-  "name": "react-native-intercom-webview",
+  "name": "built-react-native-intercom-webview",
   "version": "1.2.5",
   "description": "React Native WebView containing Intercom",
   "main": "IntercomWebView.js",
