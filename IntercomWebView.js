@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, WebView, Dimensions } from 'react-native';
+import { View, Dimensions } from 'react-native';
+import { WebView } from 'react-native-webview'
 import Spinner from 'react-native-loading-spinner-overlay';
 
 class IntercomWebView extends Component{
@@ -34,7 +35,7 @@ class IntercomWebView extends Component{
         } catch(e){
             console.log('Unable to stringify config', e)
         }
-          
+
         return `
             window.Intercom('boot', ${strConfig});
 
