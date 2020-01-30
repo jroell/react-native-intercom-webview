@@ -1,6 +1,6 @@
 {
   "name": "built-react-native-intercom-webview",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "React Native WebView containing Intercom",
   "main": "IntercomWebView.js",
   "scripts": {
@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/APSL/react-native-intercom-webview#readme",
   "dependencies": {
-    "react-native-loading-spinner-overlay": "^0.5.2",
-    "react-native-webview": "^8.0.6"
+    "react-native-loading-spinner-overlay": "^0.5.2"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.5",
@@ -34,6 +33,7 @@
     "eslint-plugin-react": "^5.2.2",
     "eslint-plugin-react-native": "^1.1.0-beta",
     "react": "^16.12.0",
-    "react-native": "^0.61.5"
+    "react-native": "^0.61.5",
+    "react-native-webview": "^8.0.6"
   }
 }
