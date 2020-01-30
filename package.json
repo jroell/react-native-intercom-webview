@@ -1,6 +1,6 @@
 {
   "name": "built-react-native-intercom-webview",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "React Native WebView containing Intercom",
   "main": "IntercomWebView.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "eslint": "^2.13.1",
     "eslint-plugin-react": "^5.2.2",
     "eslint-plugin-react-native": "^1.1.0-beta",
-    "react": "^16.12.0",
-    "react-native": "^0.61.5",
-    "react-native-webview": "^8.0.6"
+    "react-native-webview": "^7.4.3",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
   }
 }
