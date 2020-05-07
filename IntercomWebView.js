@@ -38,7 +38,7 @@ class IntercomWebView extends Component{
 
         return `
             window.Intercom('boot', ${strConfig});
-
+            window.Intercom('onHide', function () {window.ReactNativeWebView.postMessage("hidden")});
             if (${hideLauncher})
                 window.Intercom('showMessages');
         `;
@@ -63,9 +63,10 @@ class IntercomWebView extends Component{
                 <Spinner visible={showLoadingOverlay && isLoading} />
                 <WebView source={require('./IntercomWebView.html')}
                          style={{flex: 1, backgroundColor: 'blue'}}
-                         injectedJavaScript={this.injectedJS( appId, name, email, id, hideLauncher, userHash, onHide )}
+                         injectedJavaScript={this.injectedJS( appId, name, email, id, hideLauncher, userHash )}
                          javaScriptEnabled={true}
                          onLoadEnd={this.onLoadEnd}
+                         onMessage={event => {onHide()}}
                         {...remainingProps}
                 />
             </View>
